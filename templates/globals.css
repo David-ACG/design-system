@@ -1,0 +1,275 @@
+/**
+ * Global Styles Template
+ *
+ * This file integrates design tokens with Tailwind CSS v4.
+ * Copy to: src/styles/globals.css or src/app/globals.css
+ */
+
+@import "tailwindcss";
+
+/* Import design tokens */
+@import "../../design-system/tokens/base.css";
+@import "../../design-system/tokens/colors.css";
+@import "../../design-system/tokens/typography.css";
+
+/* =================================================================
+   TAILWIND @theme CONFIGURATION
+   Maps CSS variables to Tailwind utilities
+   ================================================================= */
+
+@theme {
+  /* Colors - mapped from tokens */
+  --color-background: hsl(var(--color-background));
+  --color-foreground: hsl(var(--color-foreground));
+
+  --color-primary: hsl(var(--color-primary));
+  --color-primary-foreground: hsl(var(--color-primary-foreground));
+
+  --color-secondary: hsl(var(--color-secondary));
+  --color-secondary-foreground: hsl(var(--color-secondary-foreground));
+
+  --color-accent: hsl(var(--color-accent));
+  --color-accent-foreground: hsl(var(--color-accent-foreground));
+
+  --color-muted: hsl(var(--color-muted));
+  --color-muted-foreground: hsl(var(--color-muted-foreground));
+
+  --color-destructive: hsl(var(--color-destructive));
+  --color-destructive-foreground: hsl(var(--color-destructive-foreground));
+
+  --color-success: hsl(var(--color-success));
+  --color-success-foreground: hsl(var(--color-success-foreground));
+
+  --color-warning: hsl(var(--color-warning));
+  --color-warning-foreground: hsl(var(--color-warning-foreground));
+
+  --color-info: hsl(var(--color-info));
+  --color-info-foreground: hsl(var(--color-info-foreground));
+
+  --color-border: hsl(var(--color-border));
+  --color-input: hsl(var(--color-input));
+  --color-ring: hsl(var(--color-ring));
+
+  --color-card: hsl(var(--color-card));
+  --color-card-foreground: hsl(var(--color-card-foreground));
+
+  --color-popover: hsl(var(--color-popover));
+  --color-popover-foreground: hsl(var(--color-popover-foreground));
+
+  /* Typography */
+  --font-family-sans: var(--font-sans);
+  --font-family-heading: var(--font-heading);
+  --font-family-mono: var(--font-mono);
+
+  /* Border radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-full: var(--radius-full);
+}
+
+/* =================================================================
+   BASE LAYER
+   Global element styles
+   ================================================================= */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg lg:text-xl;
+  }
+
+  h6 {
+    @apply text-base lg:text-lg;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  /* Code blocks */
+  pre, code {
+    font-family: var(--font-mono);
+  }
+
+  code {
+    @apply bg-muted px-1.5 py-0.5 rounded text-sm;
+  }
+
+  pre code {
+    @apply bg-transparent p-0;
+  }
+}
+
+/* =================================================================
+   COMPONENT LAYER
+   Reusable component patterns
+   ================================================================= */
+
+@layer components {
+  /* Container */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: var(--container-7xl);
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 lg:py-24;
+  }
+
+  /* Card base */
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border shadow-sm;
+  }
+
+  /* Prose/article content */
+  .prose {
+    max-width: var(--prose-width);
+    @apply text-foreground;
+  }
+
+  .prose p {
+    @apply leading-relaxed mb-4;
+  }
+
+  .prose a {
+    @apply text-primary underline underline-offset-4 hover:text-primary/80;
+  }
+
+  .prose ul, .prose ol {
+    @apply pl-6 mb-4;
+  }
+
+  .prose li {
+    @apply mb-2;
+  }
+}
+
+/* =================================================================
+   UTILITY LAYER
+   Custom utilities
+   ================================================================= */
+
+@layer utilities {
+  /* Text balance for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Hide scrollbar */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Animation utilities */
+  .animate-in {
+    animation: animate-in 0.3s ease-out;
+  }
+
+  .animate-out {
+    animation: animate-out 0.2s ease-in;
+  }
+
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes animate-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+  }
+}
+
+/* =================================================================
+   DARK MODE
+   Additional dark mode adjustments beyond token swaps
+   ================================================================= */
+
+.dark {
+  color-scheme: dark;
+}
+
+/* =================================================================
+   PRINT STYLES
+   ================================================================= */
+
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

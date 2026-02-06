@@ -1,0 +1,243 @@
+/* =================================================================
+   TYPOGRAPHY TOKENS
+   Site-specific typography - CUSTOMIZE FOR EACH PROJECT
+   ================================================================= */
+
+:root {
+  /* =========================================
+     FONT FAMILIES
+     Customize these for each site
+     ========================================= */
+
+  /* Primary sans-serif for body text */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system,
+               BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Display/heading font - can be same as sans or different */
+  --font-heading: "Inter", ui-sans-serif, system-ui, -apple-system,
+                  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+                  Arial, sans-serif;
+
+  /* Monospace for code blocks */
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular,
+               "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Serif for editorial content (optional) */
+  --font-serif: "Georgia", "Times New Roman", Times, serif;
+
+  /* =========================================
+     FONT SIZES
+     Modular scale using 1.25 ratio (Major Third)
+     ========================================= */
+
+  /* Base size: 16px = 1rem */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  --text-7xl: 4.5rem;      /* 72px */
+  --text-8xl: 6rem;        /* 96px */
+  --text-9xl: 8rem;        /* 128px */
+
+  /* =========================================
+     LINE HEIGHTS
+     For optimal readability
+     ========================================= */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* Computed line heights for headings */
+  --leading-heading: 1.1;
+  --leading-subheading: 1.25;
+
+  /* =========================================
+     FONT WEIGHTS
+     ========================================= */
+  --font-thin: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* =========================================
+     LETTER SPACING (Tracking)
+     ========================================= */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* Headings typically use tighter tracking */
+  --tracking-heading: -0.02em;
+
+  /* =========================================
+     WORD SPACING
+     ========================================= */
+  --word-spacing-tight: -0.05em;
+  --word-spacing-normal: 0;
+  --word-spacing-wide: 0.1em;
+
+  /* =========================================
+     TEXT DECORATION
+     ========================================= */
+  --underline-offset: 0.2em;
+  --underline-thickness: 1px;
+
+  /* =========================================
+     PARAGRAPH SETTINGS
+     ========================================= */
+  --paragraph-spacing: 1.5em;
+  --paragraph-indent: 0;
+
+  /* =========================================
+     TEXT COLUMN WIDTHS
+     For optimal readability
+     ========================================= */
+  --prose-width: 65ch;          /* Ideal line length for body */
+  --prose-width-sm: 45ch;       /* Narrow columns */
+  --prose-width-lg: 80ch;       /* Wide layout */
+}
+
+/* =================================================================
+   TYPOGRAPHY PRESETS
+   Ready-to-use text style combinations
+   ================================================================= */
+
+/* Hero headline */
+.text-hero {
+  font-family: var(--font-heading);
+  font-size: var(--text-6xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+}
+
+/* Page title */
+.text-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-heading);
+}
+
+/* Section heading */
+.text-heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* Subheading */
+.text-subheading {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-snug);
+}
+
+/* Body text */
+.text-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
+/* Body small */
+.text-body-sm {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+}
+
+/* Caption text */
+.text-caption {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* Code */
+.text-code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
+/* =================================================================
+   RESPONSIVE TYPOGRAPHY
+   Scale type sizes at different breakpoints
+   ================================================================= */
+
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.5rem;   /* 40px instead of 48px */
+    --text-6xl: 3rem;     /* 48px instead of 60px */
+    --text-7xl: 3.5rem;   /* 56px instead of 72px */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-4xl: 1.875rem; /* 30px instead of 36px */
+    --text-5xl: 2.25rem;  /* 36px instead of 48px */
+    --text-6xl: 2.5rem;   /* 40px instead of 60px */
+  }
+}
+
+/* =================================================================
+   FONT LOADING NOTES
+
+   For custom fonts (Google Fonts, etc.):
+
+   1. Add to your layout.tsx or _document.tsx:
+
+   import { Inter, JetBrains_Mono } from 'next/font/google'
+
+   const inter = Inter({
+     subsets: ['latin'],
+     variable: '--font-inter',
+   })
+
+   const jetbrainsMono = JetBrains_Mono({
+     subsets: ['latin'],
+     variable: '--font-jetbrains',
+   })
+
+   2. Apply to body:
+   <body className={`${inter.variable} ${jetbrainsMono.variable}`}>
+
+   3. Update CSS variables in this file to use the variables
+
+   Recommended font pairings:
+   - Inter + JetBrains Mono (modern, technical)
+   - Poppins + Space Mono (friendly, startup)
+   - DM Sans + DM Mono (clean, balanced)
+   - Manrope + Fira Code (contemporary, readable)
+   - Plus Jakarta Sans + IBM Plex Mono (professional)
+   ================================================================= */

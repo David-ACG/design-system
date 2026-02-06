@@ -1,0 +1,215 @@
+/* =================================================================
+   GWTH STUDENT BACKEND - COLOR TOKENS
+   Based on GWTH.ai Ocean Tech design system
+   Primary (Aqua): #33BBFF / oklch(0.7 0.18 220)
+   Accent (Mint): #1CBA93 / oklch(0.65 0.16 165)
+   ================================================================= */
+
+:root {
+  /* =========================================
+     SEMANTIC COLORS - LIGHT MODE
+     ========================================= */
+
+  /* Background & Foreground */
+  --color-background: oklch(0.98 0 0);
+  --color-foreground: oklch(0.18 0.04 175);
+
+  /* Primary - Aqua #33BBFF */
+  --color-primary: oklch(0.7 0.18 220);
+  --color-primary-foreground: oklch(0.98 0 0);
+
+  /* Secondary */
+  --color-secondary: oklch(0.95 0.01 220);
+  --color-secondary-foreground: oklch(0.18 0.04 175);
+
+  /* Accent - Mint #1CBA93 */
+  --color-accent: oklch(0.65 0.16 165);
+  --color-accent-foreground: oklch(0.98 0 0);
+
+  /* Muted */
+  --color-muted: oklch(0.95 0.01 220);
+  --color-muted-foreground: oklch(0.5 0.02 220);
+
+  /* Destructive */
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: oklch(0.98 0 0);
+
+  /* Success */
+  --color-success: oklch(0.6 0.18 145);
+  --color-success-foreground: oklch(0.98 0 0);
+
+  /* Warning */
+  --color-warning: oklch(0.75 0.15 75);
+  --color-warning-foreground: oklch(0.18 0.04 175);
+
+  /* Info */
+  --color-info: oklch(0.7 0.18 220);
+  --color-info-foreground: oklch(0.98 0 0);
+
+  /* =========================================
+     UI ELEMENT COLORS
+     ========================================= */
+
+  /* Borders */
+  --color-border: oklch(0.9 0.02 220);
+  --color-border-hover: oklch(0.8 0.04 220);
+
+  /* Form inputs */
+  --color-input: oklch(0.9 0.02 220);
+  --color-input-focus: oklch(0.7 0.18 220);
+
+  /* Focus ring */
+  --color-ring: oklch(0.7 0.18 220);
+
+  /* Cards and elevated surfaces */
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.18 0.04 175);
+
+  /* Popovers and dropdowns */
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.18 0.04 175);
+
+  /* =========================================
+     SURFACE VARIANTS
+     For layered dashboard interface
+     ========================================= */
+  --color-surface-0: oklch(0.98 0 0);
+  --color-surface-1: oklch(0.97 0.005 220);
+  --color-surface-2: oklch(0.95 0.01 220);
+  --color-surface-3: oklch(0.93 0.015 220);
+
+  /* =========================================
+     SIDEBAR COLORS
+     For dashboard navigation
+     ========================================= */
+  --color-sidebar: oklch(0.97 0.005 175);
+  --color-sidebar-foreground: oklch(0.18 0.04 175);
+  --color-sidebar-primary: oklch(0.7 0.18 220);
+  --color-sidebar-primary-foreground: oklch(0.98 0 0);
+  --color-sidebar-accent: oklch(0.93 0.02 165);
+  --color-sidebar-accent-foreground: oklch(0.18 0.04 175);
+  --color-sidebar-border: oklch(0.9 0.01 220);
+  --color-sidebar-ring: oklch(0.7 0.18 220);
+  --color-sidebar-muted: oklch(0.6 0.02 220);
+
+  /* =========================================
+     CHART COLORS
+     For progress visualization
+     ========================================= */
+  --color-chart-1: oklch(0.7 0.18 220);
+  --color-chart-2: oklch(0.65 0.16 165);
+  --color-chart-3: oklch(0.6 0.118 184.704);
+  --color-chart-4: oklch(0.828 0.189 84.429);
+  --color-chart-5: oklch(0.627 0.265 303.9);
+
+  /* =========================================
+     STATUS COLORS
+     For lesson/lab progress tracking
+     ========================================= */
+  --color-status-completed: oklch(0.6 0.18 145);
+  --color-status-in-progress: oklch(0.7 0.18 220);
+  --color-status-not-started: oklch(0.6 0.02 220);
+  --color-status-locked: oklch(0.45 0.02 220);
+
+  /* =========================================
+     GRADE COLORS
+     For academic grading indicators
+     ========================================= */
+  --color-grade-a: oklch(0.6 0.18 145);
+  --color-grade-b: oklch(0.65 0.16 165);
+  --color-grade-c: oklch(0.75 0.15 75);
+  --color-grade-d: oklch(0.65 0.18 50);
+  --color-grade-f: oklch(0.577 0.245 27.325);
+}
+
+/* =================================================================
+   DARK MODE
+   ================================================================= */
+
+.dark {
+  /* Background & Foreground */
+  --color-background: oklch(0.18 0.04 175);
+  --color-foreground: oklch(0.95 0.01 155);
+
+  /* Primary - Aqua brighter for dark mode */
+  --color-primary: oklch(0.75 0.16 220);
+  --color-primary-foreground: oklch(0.18 0.04 175);
+
+  /* Secondary */
+  --color-secondary: oklch(0.25 0.04 175);
+  --color-secondary-foreground: oklch(0.95 0.01 155);
+
+  /* Accent - Mint brighter for dark mode */
+  --color-accent: oklch(0.75 0.14 165);
+  --color-accent-foreground: oklch(0.18 0.04 175);
+
+  /* Muted */
+  --color-muted: oklch(0.25 0.04 175);
+  --color-muted-foreground: oklch(0.65 0.06 220);
+
+  /* Destructive */
+  --color-destructive: oklch(0.704 0.191 22.216);
+  --color-destructive-foreground: oklch(0.98 0 0);
+
+  /* Success */
+  --color-success: oklch(0.7 0.16 145);
+  --color-success-foreground: oklch(0.18 0.04 175);
+
+  /* Warning */
+  --color-warning: oklch(0.8 0.14 75);
+  --color-warning-foreground: oklch(0.18 0.04 175);
+
+  /* Info */
+  --color-info: oklch(0.75 0.16 220);
+  --color-info-foreground: oklch(0.18 0.04 175);
+
+  /* UI Elements */
+  --color-border: oklch(1 0 0 / 12%);
+  --color-border-hover: oklch(1 0 0 / 20%);
+  --color-input: oklch(1 0 0 / 15%);
+  --color-input-focus: oklch(0.75 0.16 220);
+  --color-ring: oklch(0.75 0.16 220);
+
+  /* Cards and surfaces */
+  --color-card: oklch(0.22 0.04 175);
+  --color-card-foreground: oklch(0.95 0.01 155);
+  --color-popover: oklch(0.22 0.04 175);
+  --color-popover-foreground: oklch(0.95 0.01 155);
+
+  /* Surface variants */
+  --color-surface-0: oklch(0.18 0.04 175);
+  --color-surface-1: oklch(0.22 0.04 175);
+  --color-surface-2: oklch(0.25 0.04 175);
+  --color-surface-3: oklch(0.28 0.04 175);
+
+  /* Sidebar */
+  --color-sidebar: oklch(0.16 0.04 175);
+  --color-sidebar-foreground: oklch(0.95 0.01 155);
+  --color-sidebar-primary: oklch(0.75 0.16 220);
+  --color-sidebar-primary-foreground: oklch(0.95 0.01 155);
+  --color-sidebar-accent: oklch(0.25 0.04 175);
+  --color-sidebar-accent-foreground: oklch(0.95 0.01 155);
+  --color-sidebar-border: oklch(1 0 0 / 10%);
+  --color-sidebar-ring: oklch(0.75 0.16 220);
+  --color-sidebar-muted: oklch(0.5 0.04 220);
+
+  /* Charts */
+  --color-chart-1: oklch(0.75 0.16 220);
+  --color-chart-2: oklch(0.75 0.14 165);
+  --color-chart-3: oklch(0.696 0.17 162.48);
+  --color-chart-4: oklch(0.769 0.188 70.08);
+  --color-chart-5: oklch(0.627 0.265 303.9);
+
+  /* Status colors - brighter for dark mode */
+  --color-status-completed: oklch(0.7 0.16 145);
+  --color-status-in-progress: oklch(0.75 0.16 220);
+  --color-status-not-started: oklch(0.5 0.02 220);
+  --color-status-locked: oklch(0.35 0.02 220);
+
+  /* Grade colors - adjusted for dark mode */
+  --color-grade-a: oklch(0.7 0.16 145);
+  --color-grade-b: oklch(0.75 0.14 165);
+  --color-grade-c: oklch(0.8 0.14 75);
+  --color-grade-d: oklch(0.7 0.16 50);
+  --color-grade-f: oklch(0.704 0.191 22.216);
+}

@@ -1,0 +1,128 @@
+{
+  "name": "gwth-student",
+  "description": "GWTH.ai Student Backend - Dashboard-focused Ocean Tech theme for course content, lessons, labs, and progress tracking",
+  "inspiration": ["https://gwth.ai"],
+  "colors": {
+    "light": {
+      "background": "0 0% 96%",
+      "foreground": "175 54% 11%",
+      "primary": "200 100% 60%",
+      "primary-foreground": "0 0% 96%",
+      "secondary": "220 20% 93%",
+      "secondary-foreground": "175 54% 11%",
+      "accent": "163 74% 42%",
+      "accent-foreground": "0 0% 96%",
+      "muted": "220 20% 93%",
+      "muted-foreground": "220 15% 40%",
+      "destructive": "0 84% 60%",
+      "destructive-foreground": "0 0% 98%",
+      "success": "142 76% 36%",
+      "success-foreground": "0 0% 98%",
+      "warning": "38 92% 50%",
+      "warning-foreground": "175 54% 11%",
+      "info": "200 100% 60%",
+      "info-foreground": "0 0% 98%",
+      "border": "220 15% 87%",
+      "input": "220 15% 87%",
+      "ring": "200 100% 60%",
+      "card": "0 0% 100%",
+      "card-foreground": "175 54% 11%",
+      "popover": "0 0% 100%",
+      "popover-foreground": "175 54% 11%",
+      "sidebar": "175 20% 97%",
+      "sidebar-foreground": "175 54% 11%",
+      "sidebar-primary": "200 100% 60%",
+      "sidebar-primary-foreground": "0 0% 96%",
+      "sidebar-accent": "163 30% 93%",
+      "sidebar-accent-foreground": "175 54% 11%",
+      "sidebar-border": "220 15% 90%",
+      "sidebar-ring": "200 100% 60%"
+    },
+    "dark": {
+      "background": "174 50% 4%",
+      "foreground": "155 20% 93%",
+      "primary": "220 60% 73%",
+      "primary-foreground": "175 54% 11%",
+      "secondary": "175 40% 15%",
+      "secondary-foreground": "155 20% 93%",
+      "accent": "165 56% 73%",
+      "accent-foreground": "175 54% 11%",
+      "muted": "175 40% 15%",
+      "muted-foreground": "220 25% 55%",
+      "destructive": "22 80% 55%",
+      "destructive-foreground": "0 0% 98%",
+      "success": "142 69% 58%",
+      "success-foreground": "175 54% 11%",
+      "warning": "38 92% 50%",
+      "warning-foreground": "175 54% 11%",
+      "info": "220 60% 73%",
+      "info-foreground": "175 54% 11%",
+      "border": "0 0% 100% / 12%",
+      "input": "0 0% 100% / 15%",
+      "ring": "220 60% 73%",
+      "card": "175 40% 14%",
+      "card-foreground": "155 20% 93%",
+      "popover": "175 40% 14%",
+      "popover-foreground": "155 20% 93%",
+      "sidebar": "175 45% 10%",
+      "sidebar-foreground": "155 20% 93%",
+      "sidebar-primary": "220 60% 73%",
+      "sidebar-primary-foreground": "155 20% 93%",
+      "sidebar-accent": "175 40% 15%",
+      "sidebar-accent-foreground": "155 20% 93%",
+      "sidebar-border": "0 0% 100% / 10%",
+      "sidebar-ring": "220 60% 73%"
+    }
+  },
+  "oklch": {
+    "light": {
+      "background": "oklch(0.98 0 0)",
+      "foreground": "oklch(0.18 0.04 175)",
+      "primary": "oklch(0.7 0.18 220)",
+      "accent": "oklch(0.65 0.16 165)"
+    },
+    "dark": {
+      "background": "oklch(0.07 0.02 174)",
+      "foreground": "oklch(0.95 0.01 155)",
+      "primary": "oklch(0.75 0.16 220)",
+      "accent": "oklch(0.75 0.14 165)"
+    }
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+  },
+  "characteristics": {
+    "vibe": "professional-educational",
+    "corners": "rounded",
+    "shadows": "subtle",
+    "animations": "subtle"
+  },
+  "dashboard": {
+    "sidebar-width": "280px",
+    "sidebar-collapsed-width": "64px",
+    "header-height": "64px",
+    "content-max-width": "1400px"
+  },
+  "status-colors": {
+    "completed": "142 76% 36%",
+    "in-progress": "200 100% 60%",
+    "not-started": "220 15% 60%",
+    "locked": "220 10% 40%"
+  },
+  "grade-colors": {
+    "A": "142 76% 36%",
+    "B": "163 74% 42%",
+    "C": "38 92% 50%",
+    "D": "25 90% 55%",
+    "F": "0 84% 60%"
+  },
+  "charts": {
+    "chart-1": "oklch(0.7 0.18 220)",
+    "chart-2": "oklch(0.65 0.16 165)",
+    "chart-3": "oklch(0.6 0.118 184.704)",
+    "chart-4": "oklch(0.828 0.189 84.429)",
+    "chart-5": "oklch(0.627 0.265 303.9)"
+  }
+}

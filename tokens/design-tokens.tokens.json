@@ -1,0 +1,1095 @@
+{
+  "$name": "ACG Design System",
+  "$description": "Design tokens for the ACG design system, mapped from base.css, colors.css, and typography.css following the W3C Design Tokens Community Group format (2025.10).",
+
+  "spacing": {
+    "$type": "dimension",
+    "$description": "Spacing scale used for margins, paddings, gaps, and layout offsets.",
+    "0": {
+      "$value": "0rem",
+      "$description": "Zero spacing. Used to reset or collapse spacing."
+    },
+    "px": {
+      "$value": "0.0625rem",
+      "$description": "1px equivalent spacing for fine adjustments."
+    },
+    "0-5": {
+      "$value": "0.125rem",
+      "$description": "Extra-extra-small spacing (2px). Minimal internal padding."
+    },
+    "1": {
+      "$value": "0.25rem",
+      "$description": "Extra-small spacing (4px). Tight padding and small gaps."
+    },
+    "1-5": {
+      "$value": "0.375rem",
+      "$description": "Between extra-small and small spacing (6px)."
+    },
+    "2": {
+      "$value": "0.5rem",
+      "$description": "Small spacing (8px). Common inline gap and icon padding."
+    },
+    "2-5": {
+      "$value": "0.625rem",
+      "$description": "Between small and medium-small spacing (10px)."
+    },
+    "3": {
+      "$value": "0.75rem",
+      "$description": "Medium-small spacing (12px). Used for compact component padding."
+    },
+    "3-5": {
+      "$value": "0.875rem",
+      "$description": "Between medium-small and medium spacing (14px)."
+    },
+    "4": {
+      "$value": "1rem",
+      "$description": "Medium spacing (16px). Base unit; standard component padding."
+    },
+    "5": {
+      "$value": "1.25rem",
+      "$description": "Medium spacing (20px). Button padding and card insets."
+    },
+    "6": {
+      "$value": "1.5rem",
+      "$description": "Medium-large spacing (24px). Section padding and form gaps."
+    },
+    "7": {
+      "$value": "1.75rem",
+      "$description": "Between medium-large and large spacing (28px)."
+    },
+    "8": {
+      "$value": "2rem",
+      "$description": "Large spacing (32px). Card padding and content block gaps."
+    },
+    "9": {
+      "$value": "2.25rem",
+      "$description": "Between large and extra-large spacing (36px)."
+    },
+    "10": {
+      "$value": "2.5rem",
+      "$description": "Extra-large spacing (40px). Section margins."
+    },
+    "11": {
+      "$value": "2.75rem",
+      "$description": "Between extra-large and 2xl spacing (44px)."
+    },
+    "12": {
+      "$value": "3rem",
+      "$description": "2xl spacing (48px). Large section padding."
+    },
+    "14": {
+      "$value": "3.5rem",
+      "$description": "Between 2xl and 3xl spacing (56px)."
+    },
+    "16": {
+      "$value": "4rem",
+      "$description": "3xl spacing (64px). Major section divisions."
+    },
+    "20": {
+      "$value": "5rem",
+      "$description": "4xl spacing (80px). Page-level margins."
+    },
+    "24": {
+      "$value": "6rem",
+      "$description": "5xl spacing (96px). Hero sections and large gaps."
+    },
+    "28": {
+      "$value": "7rem",
+      "$description": "Between 5xl and 6xl spacing (112px)."
+    },
+    "32": {
+      "$value": "8rem",
+      "$description": "6xl spacing (128px). Full-bleed sections."
+    },
+    "36": {
+      "$value": "9rem",
+      "$description": "Between 6xl and 7xl spacing (144px)."
+    },
+    "40": {
+      "$value": "10rem",
+      "$description": "7xl spacing (160px). Large layout offsets."
+    },
+    "44": {
+      "$value": "11rem",
+      "$description": "Between 7xl and 8xl spacing (176px)."
+    },
+    "48": {
+      "$value": "12rem",
+      "$description": "8xl spacing (192px). Extra-wide layout gaps."
+    },
+    "52": {
+      "$value": "13rem",
+      "$description": "Between 8xl and 9xl spacing (208px)."
+    },
+    "56": {
+      "$value": "14rem",
+      "$description": "9xl spacing (224px)."
+    },
+    "60": {
+      "$value": "15rem",
+      "$description": "Between 9xl and 10xl spacing (240px)."
+    },
+    "64": {
+      "$value": "16rem",
+      "$description": "10xl spacing (256px). Maximum standard spacing."
+    },
+    "72": {
+      "$value": "18rem",
+      "$description": "11xl spacing (288px). Very large layout offsets."
+    },
+    "80": {
+      "$value": "20rem",
+      "$description": "12xl spacing (320px). Extra-large layout offsets."
+    },
+    "96": {
+      "$value": "24rem",
+      "$description": "13xl spacing (384px). Maximum spacing value in the scale."
+    }
+  },
+
+  "borderRadius": {
+    "$type": "dimension",
+    "$description": "Border radius scale for rounding element corners.",
+    "none": {
+      "$value": "0rem",
+      "$description": "No border radius. Sharp, squared corners."
+    },
+    "xs": {
+      "$value": "0.0625rem",
+      "$description": "Extra-small border radius (1px). Barely rounded corners."
+    },
+    "sm": {
+      "$value": "0.125rem",
+      "$description": "Small border radius (2px). Subtle rounding for inputs and badges."
+    },
+    "default": {
+      "$value": "0.25rem",
+      "$description": "Default border radius (4px). Standard rounding for buttons and cards."
+    },
+    "md": {
+      "$value": "0.375rem",
+      "$description": "Medium border radius (6px). Slightly more pronounced rounding."
+    },
+    "lg": {
+      "$value": "0.5rem",
+      "$description": "Large border radius (8px). Card and modal rounding."
+    },
+    "xl": {
+      "$value": "0.75rem",
+      "$description": "Extra-large border radius (12px). Prominent rounding for panels."
+    },
+    "2xl": {
+      "$value": "1rem",
+      "$description": "2xl border radius (16px). Heavily rounded panels and dialogs."
+    },
+    "3xl": {
+      "$value": "1.5rem",
+      "$description": "3xl border radius (24px). Very pronounced rounding."
+    },
+    "full": {
+      "$value": "9999px",
+      "$description": "Fully rounded. Creates circles from square elements and pill shapes from rectangles."
+    }
+  },
+
+  "shadow": {
+    "$type": "shadow",
+    "$description": "Box shadow elevation scale for depth and layering effects.",
+    "xs": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.0625rem",
+          "blur": "0.125rem",
+          "spread": "0rem",
+          "color": "#0000000d"
+        }
+      ],
+      "$description": "Extra-small shadow. Subtle lift for flat elements like inputs."
+    },
+    "sm": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0rem",
+          "color": "#0000001a"
+        },
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.0625rem",
+          "blur": "0.125rem",
+          "spread": "-0.0625rem",
+          "color": "#0000001a"
+        }
+      ],
+      "$description": "Small shadow. Light elevation for cards and buttons at rest."
+    },
+    "default": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.0625rem",
+          "blur": "0.1875rem",
+          "spread": "0rem",
+          "color": "#0000001a"
+        },
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.0625rem",
+          "blur": "0.125rem",
+          "spread": "-0.0625rem",
+          "color": "#0000001a"
+        }
+      ],
+      "$description": "Default shadow. Standard elevation for interactive components."
+    },
+    "md": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.25rem",
+          "blur": "0.375rem",
+          "spread": "-0.0625rem",
+          "color": "#0000001a"
+        },
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.125rem",
+          "blur": "0.25rem",
+          "spread": "-0.125rem",
+          "color": "#0000001a"
+        }
+      ],
+      "$description": "Medium shadow. Moderate elevation for dropdowns and hover states."
+    },
+    "lg": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.625rem",
+          "blur": "0.9375rem",
+          "spread": "-0.1875rem",
+          "color": "#0000001a"
+        },
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.25rem",
+          "blur": "0.375rem",
+          "spread": "-0.25rem",
+          "color": "#0000001a"
+        }
+      ],
+      "$description": "Large shadow. Strong elevation for modals and popovers."
+    },
+    "xl": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "1.25rem",
+          "blur": "1.5625rem",
+          "spread": "-0.3125rem",
+          "color": "#0000001a"
+        },
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.5rem",
+          "blur": "0.625rem",
+          "spread": "-0.375rem",
+          "color": "#0000001a"
+        }
+      ],
+      "$description": "Extra-large shadow. High elevation for dialogs and overlays."
+    },
+    "2xl": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "1.5625rem",
+          "blur": "3.125rem",
+          "spread": "-0.75rem",
+          "color": "#00000040"
+        }
+      ],
+      "$description": "2xl shadow. Maximum elevation for toast notifications and critical overlays."
+    },
+    "inner": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0.125rem",
+          "blur": "0.25rem",
+          "spread": "0rem",
+          "color": "#0000000d",
+          "inset": true
+        }
+      ],
+      "$description": "Inner shadow. Inset shadow for pressed states and recessed surfaces."
+    },
+    "none": {
+      "$value": [
+        {
+          "offsetX": "0rem",
+          "offsetY": "0rem",
+          "blur": "0rem",
+          "spread": "0rem",
+          "color": "#00000000"
+        }
+      ],
+      "$description": "No shadow. Removes all box shadow effects."
+    }
+  },
+
+  "duration": {
+    "$type": "duration",
+    "$description": "Animation duration scale for transitions and motion.",
+    "75": {
+      "$value": "75ms",
+      "$description": "Ultra-fast duration. Used for micro-interactions like opacity toggles."
+    },
+    "100": {
+      "$value": "100ms",
+      "$description": "Very fast duration. Hover state color transitions."
+    },
+    "150": {
+      "$value": "150ms",
+      "$description": "Fast duration. Default for most UI state transitions."
+    },
+    "200": {
+      "$value": "200ms",
+      "$description": "Medium-fast duration. Button presses and input focus rings."
+    },
+    "300": {
+      "$value": "300ms",
+      "$description": "Medium duration. Standard transition for reveals and fades."
+    },
+    "500": {
+      "$value": "500ms",
+      "$description": "Medium-slow duration. Panel slides and expansion animations."
+    },
+    "700": {
+      "$value": "700ms",
+      "$description": "Slow duration. Complex entrance animations and page transitions."
+    },
+    "1000": {
+      "$value": "1000ms",
+      "$description": "Very slow duration. Full-page transitions and loading sequences."
+    }
+  },
+
+  "easing": {
+    "$type": "cubicBezier",
+    "$description": "Easing functions for animation curves and transition timing.",
+    "linear": {
+      "$value": [0, 0, 1, 1],
+      "$description": "Linear easing. Constant speed with no acceleration or deceleration."
+    },
+    "in": {
+      "$value": [0.4, 0, 1, 1],
+      "$description": "Ease-in. Starts slow and accelerates. Use for elements exiting the viewport."
+    },
+    "out": {
+      "$value": [0, 0, 0.2, 1],
+      "$description": "Ease-out. Starts fast and decelerates. Use for elements entering the viewport."
+    },
+    "in-out": {
+      "$value": [0.4, 0, 0.2, 1],
+      "$description": "Ease-in-out. Slow start and end with acceleration in the middle. General purpose easing."
+    },
+    "bounce": {
+      "$value": [0.175, 0.885, 0.32, 1.275],
+      "$description": "Bounce easing. Overshoots the target and settles back. Use for playful attention-drawing animations."
+    }
+  },
+
+  "zIndex": {
+    "$type": "number",
+    "$description": "Z-index layering scale to manage stacking order of elements.",
+    "0": {
+      "$value": 0,
+      "$description": "Base stacking level. Default layer for in-flow elements."
+    },
+    "10": {
+      "$value": 10,
+      "$description": "Low elevation. Slightly elevated elements like sticky headers."
+    },
+    "20": {
+      "$value": 20,
+      "$description": "Medium-low elevation. Dropdowns and positioned elements."
+    },
+    "30": {
+      "$value": 30,
+      "$description": "Medium elevation. Fixed navigation and toolbars."
+    },
+    "40": {
+      "$value": 40,
+      "$description": "Medium-high elevation. Modal backdrops and overlays."
+    },
+    "50": {
+      "$value": 50,
+      "$description": "High elevation. Modal dialogs and critical overlays."
+    },
+    "dropdown": {
+      "$value": 1000,
+      "$description": "Dropdown menus. Ensures dropdowns float above standard content."
+    },
+    "sticky": {
+      "$value": 1020,
+      "$description": "Sticky elements. Keeps sticky headers above dropdowns."
+    },
+    "fixed": {
+      "$value": 1030,
+      "$description": "Fixed elements. Fixed navigation and sidebars."
+    },
+    "modal-backdrop": {
+      "$value": 1040,
+      "$description": "Modal backdrop layer. Overlay behind modal dialogs."
+    },
+    "modal": {
+      "$value": 1050,
+      "$description": "Modal dialogs. Primary overlay layer for dialogs and sheets."
+    },
+    "popover": {
+      "$value": 1060,
+      "$description": "Popovers and tooltips. Floats above modals when needed."
+    },
+    "tooltip": {
+      "$value": 1070,
+      "$description": "Tooltips. Highest standard UI layer for contextual hints."
+    },
+    "toast": {
+      "$value": 1080,
+      "$description": "Toast notifications. Topmost layer to ensure visibility of alerts."
+    }
+  },
+
+  "breakpoint": {
+    "$type": "dimension",
+    "$description": "Responsive breakpoints for adaptive layout changes.",
+    "sm": {
+      "$value": "640px",
+      "$description": "Small breakpoint. Targets large phones in landscape and small tablets."
+    },
+    "md": {
+      "$value": "768px",
+      "$description": "Medium breakpoint. Targets tablets in portrait orientation."
+    },
+    "lg": {
+      "$value": "1024px",
+      "$description": "Large breakpoint. Targets tablets in landscape and small laptops."
+    },
+    "xl": {
+      "$value": "1280px",
+      "$description": "Extra-large breakpoint. Targets standard desktop monitors."
+    },
+    "2xl": {
+      "$value": "1536px",
+      "$description": "2xl breakpoint. Targets large desktop monitors and wide displays."
+    }
+  },
+
+  "container": {
+    "$type": "dimension",
+    "$description": "Maximum container widths for constraining content regions.",
+    "xs": {
+      "$value": "20rem",
+      "$description": "Extra-small container (320px). Narrow content like login forms."
+    },
+    "sm": {
+      "$value": "24rem",
+      "$description": "Small container (384px). Compact card layouts."
+    },
+    "md": {
+      "$value": "28rem",
+      "$description": "Medium container (448px). Dialogs and narrow forms."
+    },
+    "lg": {
+      "$value": "32rem",
+      "$description": "Large container (512px). Standard form widths."
+    },
+    "xl": {
+      "$value": "36rem",
+      "$description": "Extra-large container (576px). Wide forms and panels."
+    },
+    "2xl": {
+      "$value": "42rem",
+      "$description": "2xl container (672px). Content sections."
+    },
+    "3xl": {
+      "$value": "48rem",
+      "$description": "3xl container (768px). Article and blog content."
+    },
+    "4xl": {
+      "$value": "56rem",
+      "$description": "4xl container (896px). Wide content areas."
+    },
+    "5xl": {
+      "$value": "64rem",
+      "$description": "5xl container (1024px). Dashboard and app layouts."
+    },
+    "6xl": {
+      "$value": "72rem",
+      "$description": "6xl container (1152px). Wide dashboard layouts."
+    },
+    "7xl": {
+      "$value": "80rem",
+      "$description": "7xl container (1280px). Maximum standard page width."
+    },
+    "prose": {
+      "$value": "65ch",
+      "$description": "Prose container. Optimal reading width for long-form text content."
+    }
+  },
+
+  "aspectRatio": {
+    "$type": "number",
+    "$description": "Aspect ratio tokens for constraining element proportions.",
+    "auto": {
+      "$value": 0,
+      "$description": "Auto aspect ratio. Element determines its own proportions from content."
+    },
+    "square": {
+      "$value": 1,
+      "$description": "Square aspect ratio (1:1). Profile images, avatars, and icons."
+    },
+    "video": {
+      "$value": 1.7778,
+      "$description": "Video aspect ratio (16:9). Standard widescreen video and hero images."
+    },
+    "wide": {
+      "$value": 2.3333,
+      "$description": "Wide aspect ratio (21:9). Cinematic banners and ultra-wide layouts."
+    }
+  },
+
+  "color": {
+    "$type": "color",
+    "$description": "Semantic color tokens for the ACG design system light theme. Values in HSL.",
+
+    "background": {
+      "$value": "hsl(0 0% 100%)",
+      "$description": "Default page background color. Pure white for light mode."
+    },
+    "foreground": {
+      "$value": "hsl(222 47% 11%)",
+      "$description": "Default text and icon color on the page background."
+    },
+
+    "primary": {
+      "$value": "hsl(221 83% 53%)",
+      "$description": "Primary brand color. Used for main CTAs, links, and active states."
+    },
+    "primary-foreground": {
+      "$value": "hsl(210 40% 98%)",
+      "$description": "Text and icon color on primary-colored backgrounds."
+    },
+
+    "secondary": {
+      "$value": "hsl(210 40% 96%)",
+      "$description": "Secondary color. Used for less prominent actions and backgrounds."
+    },
+    "secondary-foreground": {
+      "$value": "hsl(222 47% 11%)",
+      "$description": "Text and icon color on secondary-colored backgrounds."
+    },
+
+    "accent": {
+      "$value": "hsl(262 83% 58%)",
+      "$description": "Accent color. Used for highlights, badges, and decorative elements."
+    },
+    "accent-foreground": {
+      "$value": "hsl(210 40% 98%)",
+      "$description": "Text and icon color on accent-colored backgrounds."
+    },
+
+    "muted": {
+      "$value": "hsl(210 40% 96%)",
+      "$description": "Muted background color. Used for disabled states and subtle surfaces."
+    },
+    "muted-foreground": {
+      "$value": "hsl(215 16% 47%)",
+      "$description": "Text color for muted or secondary content like placeholders and captions."
+    },
+
+    "destructive": {
+      "$value": "hsl(0 84% 60%)",
+      "$description": "Destructive action color. Used for delete buttons, error states, and danger alerts."
+    },
+    "destructive-foreground": {
+      "$value": "hsl(210 40% 98%)",
+      "$description": "Text and icon color on destructive-colored backgrounds."
+    },
+
+    "success": {
+      "$value": "hsl(142 76% 36%)",
+      "$description": "Success color. Used for confirmation states, valid inputs, and positive feedback."
+    },
+    "success-foreground": {
+      "$value": "hsl(210 40% 98%)",
+      "$description": "Text and icon color on success-colored backgrounds."
+    },
+
+    "warning": {
+      "$value": "hsl(38 92% 50%)",
+      "$description": "Warning color. Used for caution states, pending actions, and advisory alerts."
+    },
+    "warning-foreground": {
+      "$value": "hsl(222 47% 11%)",
+      "$description": "Text and icon color on warning-colored backgrounds."
+    },
+
+    "info": {
+      "$value": "hsl(199 89% 48%)",
+      "$description": "Informational color. Used for notices, help text, and informational banners."
+    },
+    "info-foreground": {
+      "$value": "hsl(210 40% 98%)",
+      "$description": "Text and icon color on info-colored backgrounds."
+    },
+
+    "border": {
+      "$value": "hsl(214 32% 91%)",
+      "$description": "Default border color. Used for dividers, input borders, and separators."
+    },
+    "border-hover": {
+      "$value": "hsl(214 32% 81%)",
+      "$description": "Border color on hover state. Slightly darker than the default border."
+    },
+
+    "input": {
+      "$value": "hsl(214 32% 91%)",
+      "$description": "Input border color at rest. Matches the default border color."
+    },
+    "input-focus": {
+      "$value": "{color.primary}",
+      "$description": "Input border color when focused. References the primary color for visual emphasis."
+    },
+
+    "ring": {
+      "$value": "{color.primary}",
+      "$description": "Focus ring color. Used for keyboard focus indicators. References the primary color."
+    },
+    "ring-offset": {
+      "$value": "{color.background}",
+      "$description": "Focus ring offset color. Gap between the ring and the element. References the background color."
+    },
+
+    "card": {
+      "$value": "hsl(0 0% 100%)",
+      "$description": "Card background color. Surface color for card components."
+    },
+    "card-foreground": {
+      "$value": "hsl(222 47% 11%)",
+      "$description": "Text and icon color on card backgrounds."
+    },
+
+    "popover": {
+      "$value": "hsl(0 0% 100%)",
+      "$description": "Popover background color. Surface color for dropdowns, tooltips, and popovers."
+    },
+    "popover-foreground": {
+      "$value": "hsl(222 47% 11%)",
+      "$description": "Text and icon color on popover backgrounds."
+    },
+
+    "surface": {
+      "$description": "Surface elevation colors. Progressively darker backgrounds for layered surfaces.",
+      "0": {
+        "$value": "hsl(0 0% 100%)",
+        "$type": "color",
+        "$description": "Surface level 0. Base surface, equivalent to the page background."
+      },
+      "1": {
+        "$value": "hsl(210 40% 98%)",
+        "$type": "color",
+        "$description": "Surface level 1. Slightly elevated surface for sections and sidebars."
+      },
+      "2": {
+        "$value": "hsl(210 40% 96%)",
+        "$type": "color",
+        "$description": "Surface level 2. Mid-elevation surface for cards within sections."
+      },
+      "3": {
+        "$value": "hsl(214 32% 91%)",
+        "$type": "color",
+        "$description": "Surface level 3. High-elevation surface for nested cards and raised panels."
+      }
+    },
+
+    "brand": {
+      "$description": "Brand palette scale from lightest (50) to darkest (950). Full color ramp for the primary brand hue.",
+      "50": {
+        "$value": "hsl(214 100% 97%)",
+        "$type": "color",
+        "$description": "Brand 50. Lightest tint for subtle backgrounds and hover states."
+      },
+      "100": {
+        "$value": "hsl(214 95% 93%)",
+        "$type": "color",
+        "$description": "Brand 100. Very light tint for selected row backgrounds."
+      },
+      "200": {
+        "$value": "hsl(213 97% 87%)",
+        "$type": "color",
+        "$description": "Brand 200. Light tint for active backgrounds and focus rings."
+      },
+      "300": {
+        "$value": "hsl(212 96% 78%)",
+        "$type": "color",
+        "$description": "Brand 300. Mid-light tone for borders and decorative accents."
+      },
+      "400": {
+        "$value": "hsl(213 94% 68%)",
+        "$type": "color",
+        "$description": "Brand 400. Medium tone for secondary buttons and icons."
+      },
+      "500": {
+        "$value": "hsl(217 91% 60%)",
+        "$type": "color",
+        "$description": "Brand 500. Core brand color. Primary buttons and active links."
+      },
+      "600": {
+        "$value": "hsl(221 83% 53%)",
+        "$type": "color",
+        "$description": "Brand 600. Slightly darker brand color. Hover states for primary elements."
+      },
+      "700": {
+        "$value": "hsl(224 76% 48%)",
+        "$type": "color",
+        "$description": "Brand 700. Dark brand color. Active/pressed states."
+      },
+      "800": {
+        "$value": "hsl(226 71% 40%)",
+        "$type": "color",
+        "$description": "Brand 800. Very dark brand color for high-contrast text on light brand backgrounds."
+      },
+      "900": {
+        "$value": "hsl(224 64% 33%)",
+        "$type": "color",
+        "$description": "Brand 900. Near-black brand color for headings and bold text."
+      },
+      "950": {
+        "$value": "hsl(226 57% 21%)",
+        "$type": "color",
+        "$description": "Brand 950. Darkest brand shade. Used for dark-mode surfaces and high-contrast elements."
+      }
+    }
+  },
+
+  "fontFamily": {
+    "$type": "fontFamily",
+    "$description": "Font family stacks for different typographic roles.",
+    "sans": {
+      "$value": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      "$description": "Sans-serif font stack. Default body text face using Inter with system fallbacks."
+    },
+    "heading": {
+      "$value": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+      "$description": "Heading font stack. Used for all headings and display text."
+    },
+    "mono": {
+      "$value": ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+      "$description": "Monospace font stack. Used for code, pre-formatted text, and technical content."
+    },
+    "serif": {
+      "$value": ["Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+      "$description": "Serif font stack. Used for editorial content, pull quotes, and decorative typography."
+    }
+  },
+
+  "fontSize": {
+    "$type": "dimension",
+    "$description": "Type scale for font sizes from extra-small to 9xl display.",
+    "xs": {
+      "$value": "0.75rem",
+      "$description": "Extra-small font size (12px). Captions, footnotes, and legal text."
+    },
+    "sm": {
+      "$value": "0.875rem",
+      "$description": "Small font size (14px). Helper text, labels, and secondary content."
+    },
+    "base": {
+      "$value": "1rem",
+      "$description": "Base font size (16px). Default body text size."
+    },
+    "lg": {
+      "$value": "1.125rem",
+      "$description": "Large font size (18px). Lead paragraphs and emphasized body text."
+    },
+    "xl": {
+      "$value": "1.25rem",
+      "$description": "Extra-large font size (20px). Small headings and subheadings."
+    },
+    "2xl": {
+      "$value": "1.5rem",
+      "$description": "2xl font size (24px). Section headings (h4)."
+    },
+    "3xl": {
+      "$value": "1.875rem",
+      "$description": "3xl font size (30px). Sub-section headings (h3)."
+    },
+    "4xl": {
+      "$value": "2.25rem",
+      "$description": "4xl font size (36px). Page headings (h2)."
+    },
+    "5xl": {
+      "$value": "3rem",
+      "$description": "5xl font size (48px). Large page headings (h1)."
+    },
+    "6xl": {
+      "$value": "3.75rem",
+      "$description": "6xl font size (60px). Hero headings."
+    },
+    "7xl": {
+      "$value": "4.5rem",
+      "$description": "7xl font size (72px). Display headings."
+    },
+    "8xl": {
+      "$value": "6rem",
+      "$description": "8xl font size (96px). Large display text."
+    },
+    "9xl": {
+      "$value": "8rem",
+      "$description": "9xl font size (128px). Maximum display text for hero banners."
+    }
+  },
+
+  "lineHeight": {
+    "$type": "number",
+    "$description": "Line height scale for controlling vertical rhythm and text readability.",
+    "none": {
+      "$value": 1,
+      "$description": "No extra line height. Text sits exactly at the font size. Use for single-line display text."
+    },
+    "tight": {
+      "$value": 1.25,
+      "$description": "Tight line height. Used for large headings where compact spacing is desired."
+    },
+    "snug": {
+      "$value": 1.375,
+      "$description": "Snug line height. Slightly more breathing room than tight; good for medium headings."
+    },
+    "normal": {
+      "$value": 1.5,
+      "$description": "Normal line height. Default for body text ensuring comfortable readability."
+    },
+    "relaxed": {
+      "$value": 1.625,
+      "$description": "Relaxed line height. Extra vertical space for dense paragraphs and small text."
+    },
+    "loose": {
+      "$value": 2,
+      "$description": "Loose line height. Double-spaced text for maximum readability and annotations."
+    },
+    "heading": {
+      "$value": 1.2,
+      "$description": "Heading line height. Optimized for large display and page headings."
+    },
+    "subheading": {
+      "$value": 1.35,
+      "$description": "Subheading line height. Tuned for section subheadings and smaller heading levels."
+    }
+  },
+
+  "fontWeight": {
+    "$type": "fontWeight",
+    "$description": "Font weight scale from thin (100) to black (900).",
+    "thin": {
+      "$value": 100,
+      "$description": "Thin weight (100). Decorative use only; avoid for small text or critical content."
+    },
+    "extralight": {
+      "$value": 200,
+      "$description": "Extra-light weight (200). Large display text and stylistic headings."
+    },
+    "light": {
+      "$value": 300,
+      "$description": "Light weight (300). Elegant body text on high-resolution displays."
+    },
+    "normal": {
+      "$value": 400,
+      "$description": "Normal weight (400). Default body text weight."
+    },
+    "medium": {
+      "$value": 500,
+      "$description": "Medium weight (500). Slightly emphasized text, labels, and navigation items."
+    },
+    "semibold": {
+      "$value": 600,
+      "$description": "Semi-bold weight (600). Subheadings, button text, and strong labels."
+    },
+    "bold": {
+      "$value": 700,
+      "$description": "Bold weight (700). Headings and key UI text that needs emphasis."
+    },
+    "extrabold": {
+      "$value": 800,
+      "$description": "Extra-bold weight (800). High-impact headings and display text."
+    },
+    "black": {
+      "$value": 900,
+      "$description": "Black weight (900). Maximum weight for hero text and bold branding."
+    }
+  },
+
+  "letterSpacing": {
+    "$type": "dimension",
+    "$description": "Letter spacing (tracking) scale for adjusting character spacing.",
+    "tighter": {
+      "$value": "-0.05em",
+      "$description": "Tightest tracking. Large display headings where characters need to be closer."
+    },
+    "tight": {
+      "$value": "-0.025em",
+      "$description": "Tight tracking. Headings and subheadings with subtle tightening."
+    },
+    "normal": {
+      "$value": "0em",
+      "$description": "Normal tracking. Default letter spacing for body text."
+    },
+    "wide": {
+      "$value": "0.025em",
+      "$description": "Wide tracking. Small text, labels, and uppercase text for readability."
+    },
+    "wider": {
+      "$value": "0.05em",
+      "$description": "Wider tracking. Uppercase labels, overlines, and eyebrow text."
+    },
+    "widest": {
+      "$value": "0.1em",
+      "$description": "Widest tracking. Fully spaced-out uppercase text for decorative use."
+    },
+    "heading": {
+      "$value": "-0.02em",
+      "$description": "Heading tracking. Slightly tightened for heading hierarchy."
+    }
+  },
+
+  "wordSpacing": {
+    "$type": "dimension",
+    "$description": "Word spacing tokens for controlling space between words.",
+    "tight": {
+      "$value": "-0.05em",
+      "$description": "Tight word spacing. Reduces space between words for dense layouts."
+    },
+    "normal": {
+      "$value": "0em",
+      "$description": "Normal word spacing. Browser default spacing between words."
+    },
+    "wide": {
+      "$value": "0.1em",
+      "$description": "Wide word spacing. Increases readability in short uppercase strings."
+    }
+  },
+
+  "textDecoration": {
+    "$type": "dimension",
+    "$description": "Text decoration tokens for underline thickness and offset.",
+    "thickness-auto": {
+      "$value": "auto",
+      "$description": "Automatic underline thickness determined by the browser and font metrics."
+    },
+    "thickness-from-font": {
+      "$value": "from-font",
+      "$description": "Underline thickness derived from font metadata for consistent rendering."
+    },
+    "thickness-1": {
+      "$value": "1px",
+      "$description": "1px underline thickness. Thin, subtle underlines for links."
+    },
+    "thickness-2": {
+      "$value": "2px",
+      "$description": "2px underline thickness. Standard underlines for emphasis."
+    },
+    "offset-auto": {
+      "$value": "auto",
+      "$description": "Automatic underline offset. Positioned by the browser for optimal descender clearance."
+    },
+    "offset-1": {
+      "$value": "1px",
+      "$description": "1px underline offset from the text baseline."
+    },
+    "offset-2": {
+      "$value": "2px",
+      "$description": "2px underline offset. Slightly further from the baseline."
+    },
+    "offset-4": {
+      "$value": "4px",
+      "$description": "4px underline offset. Notable gap between text and underline for stylistic use."
+    },
+    "offset-8": {
+      "$value": "8px",
+      "$description": "8px underline offset. Large gap for decorative underline treatments."
+    }
+  },
+
+  "paragraph": {
+    "$description": "Paragraph formatting tokens for text blocks and long-form content.",
+    "indent": {
+      "$type": "dimension",
+      "$description": "Paragraph indentation tokens.",
+      "none": {
+        "$value": "0rem",
+        "$description": "No paragraph indent. Default for web content."
+      },
+      "sm": {
+        "$value": "1rem",
+        "$description": "Small paragraph indent (16px). Subtle first-line indentation."
+      },
+      "md": {
+        "$value": "1.5rem",
+        "$description": "Medium paragraph indent (24px). Standard book-style indentation."
+      },
+      "lg": {
+        "$value": "2rem",
+        "$description": "Large paragraph indent (32px). Prominent indentation for formal text."
+      }
+    },
+    "spacing": {
+      "$type": "dimension",
+      "$description": "Spacing between paragraphs.",
+      "none": {
+        "$value": "0rem",
+        "$description": "No paragraph spacing. Paragraphs flow without extra vertical gap."
+      },
+      "sm": {
+        "$value": "0.75rem",
+        "$description": "Small paragraph spacing (12px). Compact paragraph separation."
+      },
+      "md": {
+        "$value": "1rem",
+        "$description": "Medium paragraph spacing (16px). Standard gap between paragraphs."
+      },
+      "lg": {
+        "$value": "1.5rem",
+        "$description": "Large paragraph spacing (24px). Generous separation for readability."
+      }
+    }
+  },
+
+  "prose": {
+    "$type": "dimension",
+    "$description": "Prose content width tokens for optimal reading line lengths.",
+    "xs": {
+      "$value": "45ch",
+      "$description": "Extra-small prose width. Narrow column for sidebars and annotations."
+    },
+    "sm": {
+      "$value": "55ch",
+      "$description": "Small prose width. Compact reading column."
+    },
+    "default": {
+      "$value": "65ch",
+      "$description": "Default prose width. Optimal reading length for body text (65 characters)."
+    },
+    "lg": {
+      "$value": "75ch",
+      "$description": "Large prose width. Wider column for technical documentation."
+    },
+    "xl": {
+      "$value": "85ch",
+      "$description": "Extra-large prose width. Wide column for code-heavy content."
+    }
+  }
+}

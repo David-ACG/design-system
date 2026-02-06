@@ -1,0 +1,178 @@
+/* =================================================================
+   COLOR TOKENS
+   Site-specific colors - CUSTOMIZE FOR EACH PROJECT
+   Colors use HSL format: "H S% L%" for easy manipulation
+   ================================================================= */
+
+:root {
+  /* =========================================
+     SEMANTIC COLORS - LIGHT MODE
+     These define your brand and UI colors
+     ========================================= */
+
+  /* Background & Foreground */
+  --color-background: 0 0% 100%;           /* White */
+  --color-foreground: 222 47% 11%;         /* Near black */
+
+  /* Primary - Main brand color, CTAs, links */
+  --color-primary: 221 83% 53%;            /* Blue */
+  --color-primary-foreground: 210 40% 98%; /* White text on primary */
+
+  /* Secondary - Supporting UI elements */
+  --color-secondary: 210 40% 96%;          /* Light gray */
+  --color-secondary-foreground: 222 47% 11%;
+
+  /* Accent - Highlights, special elements */
+  --color-accent: 262 83% 58%;             /* Purple */
+  --color-accent-foreground: 210 40% 98%;
+
+  /* Muted - Subtle backgrounds, disabled states */
+  --color-muted: 210 40% 96%;
+  --color-muted-foreground: 215 16% 47%;
+
+  /* Destructive - Errors, delete actions */
+  --color-destructive: 0 84% 60%;          /* Red */
+  --color-destructive-foreground: 210 40% 98%;
+
+  /* Success - Confirmations, positive states */
+  --color-success: 142 76% 36%;            /* Green */
+  --color-success-foreground: 210 40% 98%;
+
+  /* Warning - Cautions, alerts */
+  --color-warning: 38 92% 50%;             /* Orange */
+  --color-warning-foreground: 222 47% 11%;
+
+  /* Info - Informational messages */
+  --color-info: 199 89% 48%;               /* Cyan */
+  --color-info-foreground: 210 40% 98%;
+
+  /* =========================================
+     UI ELEMENT COLORS
+     ========================================= */
+
+  /* Borders */
+  --color-border: 214 32% 91%;
+  --color-border-hover: 214 32% 81%;
+
+  /* Form inputs */
+  --color-input: 214 32% 91%;
+  --color-input-focus: 221 83% 53%;
+
+  /* Focus ring */
+  --color-ring: 221 83% 53%;
+  --color-ring-offset: 0 0% 100%;
+
+  /* Cards and elevated surfaces */
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 222 47% 11%;
+
+  /* Popovers and dropdowns */
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 222 47% 11%;
+
+  /* =========================================
+     SURFACE VARIANTS
+     For layered interfaces
+     ========================================= */
+  --color-surface-0: 0 0% 100%;            /* Base surface */
+  --color-surface-1: 210 40% 98%;          /* Elevated +1 */
+  --color-surface-2: 210 40% 96%;          /* Elevated +2 */
+  --color-surface-3: 214 32% 94%;          /* Elevated +3 */
+
+  /* =========================================
+     BRAND COLORS
+     Direct brand palette for marketing pages
+     ========================================= */
+  --color-brand-50: 214 100% 97%;
+  --color-brand-100: 214 95% 93%;
+  --color-brand-200: 213 97% 87%;
+  --color-brand-300: 212 96% 78%;
+  --color-brand-400: 213 94% 68%;
+  --color-brand-500: 217 91% 60%;
+  --color-brand-600: 221 83% 53%;
+  --color-brand-700: 224 76% 48%;
+  --color-brand-800: 226 71% 40%;
+  --color-brand-900: 224 64% 33%;
+  --color-brand-950: 226 57% 21%;
+}
+
+/* =================================================================
+   DARK MODE
+   Override semantic colors for dark theme
+   ================================================================= */
+
+.dark {
+  /* Background & Foreground */
+  --color-background: 222 47% 11%;
+  --color-foreground: 210 40% 98%;
+
+  /* Primary */
+  --color-primary: 217 91% 60%;
+  --color-primary-foreground: 222 47% 11%;
+
+  /* Secondary */
+  --color-secondary: 217 33% 17%;
+  --color-secondary-foreground: 210 40% 98%;
+
+  /* Accent */
+  --color-accent: 263 70% 50%;
+  --color-accent-foreground: 210 40% 98%;
+
+  /* Muted */
+  --color-muted: 217 33% 17%;
+  --color-muted-foreground: 215 20% 65%;
+
+  /* Destructive */
+  --color-destructive: 0 63% 31%;
+  --color-destructive-foreground: 210 40% 98%;
+
+  /* Success */
+  --color-success: 142 69% 58%;
+  --color-success-foreground: 222 47% 11%;
+
+  /* Warning */
+  --color-warning: 38 92% 50%;
+  --color-warning-foreground: 222 47% 11%;
+
+  /* Info */
+  --color-info: 199 89% 48%;
+  --color-info-foreground: 222 47% 11%;
+
+  /* UI Elements */
+  --color-border: 217 33% 17%;
+  --color-border-hover: 217 33% 27%;
+  --color-input: 217 33% 17%;
+  --color-input-focus: 217 91% 60%;
+  --color-ring: 224 76% 48%;
+  --color-ring-offset: 222 47% 11%;
+
+  /* Cards and surfaces */
+  --color-card: 224 71% 14%;
+  --color-card-foreground: 210 40% 98%;
+  --color-popover: 224 71% 14%;
+  --color-popover-foreground: 210 40% 98%;
+
+  /* Surface variants */
+  --color-surface-0: 222 47% 11%;
+  --color-surface-1: 224 71% 14%;
+  --color-surface-2: 217 33% 17%;
+  --color-surface-3: 215 28% 21%;
+}
+
+/* =================================================================
+   COLOR UTILITY NOTES
+
+   To use these colors in Tailwind:
+   - bg-primary → background-color: hsl(var(--color-primary))
+   - text-foreground → color: hsl(var(--color-foreground))
+
+   HSL format allows easy opacity:
+   - bg-primary/50 → background-color: hsl(var(--color-primary) / 0.5)
+
+   To generate a new palette:
+   1. Use /extract-colors command with inspiration URL
+   2. Update the --color-primary and --color-accent values
+   3. Regenerate the brand scale using a tool like:
+      - https://www.realtimecolors.com/
+      - https://uicolors.app/create
+   ================================================================= */
